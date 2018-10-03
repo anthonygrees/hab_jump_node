@@ -3,15 +3,21 @@
 # Recipe:: default
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
-bash 'Do some chef pre-work' do
+
+bash 'Install Git and Docker' do
     code <<-EOH
-    sudo yum update
-    sudo yum install git
-    sudo yum install tree
-    sudo yum install yum-utils device-mapper-persistent-data lvm2
+    sudo yum -y update
+    sudo yum -y install git
+    sudo yum -y install tree
+    sudo yum -y install yum-utils device-mapper-persistent-data lvm2
     sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-    sudo yum install docker-ce
+    sudo yum -y install docker-ce
     sudo systemctl start docker
+EOH
+end
+
+bash 'Install Hab' do
+    code <<-EOH
     curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | sudo bash
     sudo groupadd hab
     sudo useradd -g hab hab
