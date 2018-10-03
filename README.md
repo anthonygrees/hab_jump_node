@@ -3,7 +3,7 @@
 ## Setup
 On your Windows jumphost , run the following commands:
 ```bash
-$ git clone 
+$ git clone https://github.com/anthonygrees/hab_jump_node
 $ cd hab_jump_node
 $ kitchen converge
 ```
