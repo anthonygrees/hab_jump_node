@@ -1,20 +1,37 @@
 ---
 driver:
-  name: vagrant
+  name: ec2
+  aws_ssh_key_id: chef_demo_2x
+  region: us-west-2
+  security_group_ids: sg-2560a741
+  associate_public_ip: true
+  instance_type: t2.micro
+  tags:
+    # Replace YOURNAME and YOURCOMPANY here
+    Name: "Chef Training Node for Hab_JumpStart, Rees"
+    user: Administrator
+    X-Contact: "Anthony Rees"
+    X-Application: "apac"
+    X-Dept: "sales"
+    X-Customer: "Rees"
+    X-Project: "BJC-Demo"
+    X-Termination-Date: "2020-07-20T12:04:30Z"
+    X-TTL: 8
 
 provisioner:
   name: chef_zero
-  # You may wish to disable always updating cookbooks in CI or other testing environments.
-  # For example:
-  #   always_update_cookbooks: <%= !ENV['CI'] %>
-  always_update_cookbooks: true
 
 verifier:
   name: inspec
+  format: documentation
 
 platforms:
-  - name: ubuntu-16.04
   - name: centos-7
+    transport:
+      username: centos
+      ssh_key:  ~\.ssh\id_rsa
+    driver_config:
+      user_data: C:/Users/chef/user_data
 
 suites:
   - name: default
@@ -22,5 +39,5 @@ suites:
       - recipe[hab_jump_node::default]
     verifier:
       inspec_tests:
-        - test/integration/default
+        - test/smoke/default
     attributes:
