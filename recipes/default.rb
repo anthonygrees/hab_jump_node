@@ -7,6 +7,7 @@ bash 'Do some chef pre-work' do
     code <<-EOH
     sudo yum install git
     sudo yum install tree
+    sudo yum install docker
     curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | sudo bash
     sudo groupadd hab
     sudo useradd -g hab hab
