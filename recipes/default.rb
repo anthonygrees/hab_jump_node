@@ -13,6 +13,7 @@ bash 'Install Git and Docker' do
     sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
     sudo yum -y install docker-ce
     sudo systemctl start docker
+    sudo yum -y install nano
 EOH
 end
 
