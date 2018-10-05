@@ -36,8 +36,8 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[hab_jump_node::default]
+      - recipe[hab_jump_node::centos]
     verifier:
       inspec_tests:
-        - test/smoke/default
+        - test/integration/centos/inspec/default
     attributes:
