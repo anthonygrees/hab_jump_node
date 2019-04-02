@@ -1,4 +1,4 @@
-name "workstations"
+name "hab_jump_node"
 maintainer "Chef Community Engineering"
 maintainer_email "community@chef.io"
 license "Apache 2.0"
