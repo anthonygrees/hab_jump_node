@@ -1,4 +1,16 @@
+![Habitat](/images/hab.png)
+
 # Habitat Jumpstart Training - Workstation
+
+## Agenda for the Workshop
+* Quick Introduction to Habitat 
+* Log into your workshop Linux workstation
+* Set up your Habitat Builder account
+* Build deploy a Node.js application with Habitat
+* Build deploy manage a Java/Tomcat application with Habitat
+ - Bindings
+ - Deploying
+ - Building with Builder
 
 ## Setup
 On your Windows jumphost , run the following commands:
@@ -8,7 +20,10 @@ $ cd hab_jump_node
 $ kitchen converge
 ```
 
-This will automatically set up and install Habitat on your `CentOS 7` workstation.  For your reference, it runs the following commands:
+This will automatically set up and install Habitat on your `CentOS 7` workstation.  
+
+## Install Habitat
+To install Habitat, run the following commands:
 ```bash
 curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | sudo bash
 sudo groupadd hab
@@ -16,7 +31,12 @@ sudo useradd -g hab hab
 ```
 
 ## Connecting to your Workstation
-In Windows, from `Cmnder` run the following:
+If you used kitchen, then you can use it to ssh with this command:
+```bash
+$ kitchen login
+```
+
+Otherwise, in Windows, from `Cmnder` run the following:
 
 ```bash
 $ ssh -i "C:\Users\chef\.ssh\id_rsa" centos@ec2-999-999-999-999.us-west-2.compute.amazonaws.com
