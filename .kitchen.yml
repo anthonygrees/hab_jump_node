@@ -5,7 +5,7 @@ driver:
   region: us-west-2
   security_group_ids: sg-2560a741
   associate_public_ip: true
-  instance_type: t2.xlarge
+  instance_type: t2.large
   tags:
     # Replace YOURNAME and YOURCOMPANY here
     Name: "Chef Training Node for Hab_JumpStart, Rees"
@@ -27,6 +27,14 @@ verifier:
 
 platforms:
   - name: centos-7
+    driver:
+      block_device_mappings:
+        - device_name: /dev/sda1
+          ebs:
+            volume_type: gp2
+#            virtual_name: test
+            volume_size: 20
+            delete_on_termination: true
     transport:
       username: centos
       ssh_key:  ~\.ssh\id_rsa
