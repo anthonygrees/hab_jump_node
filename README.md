@@ -43,3 +43,8 @@ $ ssh -i "C:\Users\chef\.ssh\id_rsa" centos@ec2-999-999-999-999.us-west-2.comput
 ```
 
 Now run `hab --version` to check your Habitat version.
+
+## Helpful Links
+The following are helpful links for students:
+* Workshop code - https://gist.github.com/anthonygrees/18d3893c8c874846b9f32ed807277047
+
