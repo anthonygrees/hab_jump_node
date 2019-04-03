@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: workstations
+# Cookbook Name:: hab_jump_node
 # Recipe:: centos
 #
 # Copyright (c) 2017 Chef Software, Inc
