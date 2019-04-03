@@ -3,14 +3,14 @@
 # Habitat Jumpstart Training - Workstation
 
 ## Agenda for the Workshop
- Markup : * Quick Introduction to Habitat 
-          * Log into your workshop Linux workstation
-          * Set up your Habitat Builder account
-          * Build deploy a Node.js application with Habitat
-          * Build deploy manage a Java/Tomcat application with Habitat
-            * Bindings
-            * Deploying
-            * Building with Builder
+* Quick Introduction to Habitat 
+* Log into your workshop Linux workstation
+* Set up your Habitat Builder account
+* Build deploy a Node.js application with Habitat
+* Build deploy manage a Java/Tomcat application with Habitat
+   * Bindings
+   * Deploying
+   * Building with Builder
 
 ## Setup
 On your Windows jumphost , run the following commands:
