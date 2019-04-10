@@ -12,6 +12,11 @@
    * Deploying
    * Building with Builder
 
+## Required Pre-Setup
+Each student will need the following:
+* GitHub account https://github.com/
+* Habitat Builder account (Can use GitHub) https://bldr.habitat.sh
+
 ## Setup
 On your Windows jumphost , run the following commands:
 ```bash
