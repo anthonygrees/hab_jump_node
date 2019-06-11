@@ -27,14 +27,6 @@ $ kitchen converge
 
 This will automatically set up and install Habitat on your `CentOS 7` workstation.  
 
-## Install Habitat
-To install Habitat, run the following commands:
-```bash
-curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | sudo bash
-sudo groupadd hab
-sudo useradd -g hab hab
-```
-
 ## Connecting to your Workstation
 If you used kitchen, then you can use it to ssh with this command:
 ```bash
@@ -42,12 +34,19 @@ $ kitchen login
 ```
 
 Otherwise, in Windows, from `Cmnder` run the following:
-
 ```bash
 $ ssh -i "C:\Users\chef\.ssh\id_rsa" centos@ec2-999-999-999-999.us-west-2.compute.amazonaws.com
 ```
 
 Now run `hab --version` to check your Habitat version.
+
+## Install Habitat
+To install Habitat, run the following commands:
+```bash
+curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | sudo bash
+sudo groupadd hab
+sudo useradd -g hab hab
+```
 
 ## Helpful Links
 The following are helpful links for students:
