@@ -25,7 +25,7 @@ $ cd hab_jump_node
 $ kitchen converge
 ```
 
-This will automatically set up and install Habitat on your `CentOS 7` workstation.  
+This will automatically set up and install Habitat on your ```CentOS 7``` workstation.  
 
 ## Connecting to your Workstation
 If you used kitchen, then you can use it to ssh with this command:
@@ -33,7 +33,7 @@ If you used kitchen, then you can use it to ssh with this command:
 $ kitchen login
 ```
 
-Otherwise, in Windows, from `Cmnder` run the following:
+Otherwise, in Windows, from ```Cmnder``` run the following:
 ```bash
 $ ssh -i "C:\Users\chef\.ssh\id_rsa" centos@ec2-999-999-999-999.us-west-2.compute.amazonaws.com
 ```
@@ -49,7 +49,7 @@ sudo useradd -g hab hab
 ## Accept the Chef License
 Now run `hab --version` to check your Habitat version.
 
-It will ask you to accept the license by typing ```yes``
+It will ask you to accept the license by typing ```yes```
 ```bash
 [centos@ip-172-31-26-185 ~]$ hab --version
 +---------------------------------------------+
