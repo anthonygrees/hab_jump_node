@@ -73,6 +73,11 @@ Accepting 1 product license...
 hab 0.82.0/20190605214032
 ```
 
+## Fork the Habitat Jumpstart Repository
+Navigate to https://github.com/chef-training/habitat_jumpstart and fork the repository to YOUR personal account
+
+To do this, click on the ```Fork``` button in the top right corner.
+
 ## Helpful Links
 The following are helpful links for students:
 * Workshop code - https://gist.github.com/anthonygrees/18d3893c8c874846b9f32ed807277047
