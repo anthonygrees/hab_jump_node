@@ -8,7 +8,7 @@ driver:
   instance_type: t2.large
   tags:
     # Replace YOURNAME and YOURCOMPANY here
-    Name: "Chef Training Node for Hab_JumpStart, Rees"
+    Name: "Chef Training Node for <YOURNAME>, Rees"
     user: Administrator
     X-Contact: "Anthony Rees"
     X-Application: "apac"
@@ -16,7 +16,8 @@ driver:
     X-Customer: "Rees"
     X-Project: "BJC-Demo"
     X-Termination-Date: "2020-07-20T12:04:30Z"
-    X-TTL: 8
+    TTL: 20
+    X-TTL: 20
 
 provisioner:
   name: chef_zero
